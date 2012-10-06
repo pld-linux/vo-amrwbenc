@@ -1,12 +1,12 @@
 Summary:	VisualOn AMR-WB encoder library
 Summary(pl.UTF-8):	Biblioteka kodera VisualOn AMR-WB
 Name:		vo-amrwbenc
-Version:	0.1.1
+Version:	0.1.2
 Release:	1
 License:	Apache v2.0
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/opencore-amr/%{name}-%{version}.tar.gz
-# Source0-md5:	ce55df38265c4e3140e42b74dd91e44c
+# Source0-md5:	588205f686adc23532e31fe3646ddcb6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -70,7 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog NEWS NOTICE README
+%doc ChangeLog NOTICE README
 %attr(755,root,root) %{_libdir}/libvo-amrwbenc.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/libvo-amrwbenc.so.0
 
